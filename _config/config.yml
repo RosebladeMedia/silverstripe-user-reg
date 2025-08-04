@@ -1,0 +1,16 @@
+---
+Name: userreg-config
+---
+# SilverStripe\Security\Group:
+#   extensions:
+#     - ilateral\SilverStripe\Users\Extensions\GroupExtension
+SilverStripe\Security\Member:
+  # required_fields:
+  #   - "FirstName"
+  #   - "Surname"
+  #   - "Email"
+  extensions:
+    - Roseblade\UserReg\DataExtension\MemberExtension
+# SilverStripe\Control\Controller:
+#   extensions:
+#     - ilateral\SilverStripe\Users\Extensions\ControllerExtension

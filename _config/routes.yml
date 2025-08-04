@@ -1,0 +1,9 @@
+---
+Name: userreg-routes
+After: framework/routes#rootroutes
+---
+# SilverStripe\Control\Director:
+#   rules:
+#     "accounts/login//$Action/$ID/$OtherID": 'Roseblade\UserReg\Page\LoginController'
+#     "accounts/register//$Action/$ID/$OtherID": 'Roseblade\UserReg\Page\RegisterController'
+#     "accounts/manage//$Action/$ID": 'Roseblade\UserReg\Page\AccountController'
