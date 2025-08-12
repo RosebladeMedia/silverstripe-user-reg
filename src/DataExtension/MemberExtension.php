@@ -186,7 +186,9 @@ class MemberExtension extends DataExtension
 						$this->owner->ID,
 						$this->owner->VerificationCode
 					),
-					"Expiry" 	=> DBField::create_field('Datetime', $this->owner->VerificationExpiry)
+					"Expiry" 		=> DBField::create_field('Datetime', $this->owner->VerificationExpiry),
+					"Member"		=> $this,
+					"SiteConfig"	=> $siteConfig
 				]));
 
 			/** Send email */
